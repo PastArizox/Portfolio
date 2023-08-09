@@ -91,25 +91,27 @@ section {
 /* Section */
 
 .section_container {
-    padding-top: 100px;
     width: 85%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
+    margin: 100px;
     display: flex;
-    margin: 0px 100px;
     flex-direction: column;
     gap: 10px;
     width: min-content;
 }
 
 section:nth-child(odd) .title {
-    float: left;
+    align-self: flex-start;
     align-items: start;
 }
 
 section:nth-child(even) .title {
-    float: right;
+    align-self: flex-end;
     align-items: end;
 }
 
@@ -132,4 +134,12 @@ section:nth-child(odd) .line2 {
 
 section:nth-child(even) .line2 {
     background-image: linear-gradient(to right, #FF7F50, #FF6347);
+}
+
+/* About */
+
+#about .presentation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
