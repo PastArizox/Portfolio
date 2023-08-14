@@ -52,16 +52,23 @@ section {
 }
 
 #home .container {
-    margin-right: 30%;
+    margin: 0px auto 0px 10%;
     padding: 50px;
     border-radius: 25px;
     display: flex;
     gap: 100px;
-    transition: box-shadow 0.5s;
+    transition: box-shadow .5s, transform .5s;
+}
+
+@media screen and (max-width: 1000px) {
+    #home .container {
+        margin: 0px auto 0px auto;
+    }
 }
 
 #home .container:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 #home .container .line {
@@ -85,15 +92,18 @@ section {
 
 #home .container .text p:nth-child(1) {
     font-size: 30px;
-    
 }
 
 #home .container .text p:nth-child(2) {
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: clamp(40px, 8vw, 80px);
+    /* TODO: Check size */
 }
 
 #home .container .text p:nth-child(3) {
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: clamp(40px, 8vw, 80px); 
+    /* TODO: Check size */
 }
 
 /* Section */
@@ -101,7 +111,7 @@ section {
 .section_container {
     width: 85%;
     max-width: 1500px;
-    padding-top: 100px;
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
 }
