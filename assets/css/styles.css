@@ -81,9 +81,17 @@ section {
 
 @media screen and (max-width: 1000px) {
     #home .container {
+        /* margin: 0; */
+        padding: 0;
         flex-direction: column-reverse;
         align-items: center;
         gap: 25px;
+        transition: none;
+    }
+
+    #home .container:hover {
+        box-shadow: none;
+        transform: none;
     }
 
     #home .container .line {
