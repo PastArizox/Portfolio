@@ -37,6 +37,12 @@
     border-bottom: solid #FF7F50 2px;
 }
 
+@media screen and (max-width: 850px) {
+    .navbar {
+        display: none;
+    }
+}
+
 /* Global */
 
 section {
@@ -178,6 +184,20 @@ section:nth-child(odd) .line2 {
 
 section:nth-child(even) .line2 {
     background-image: linear-gradient(to right, #FF7F50, #FF6347);
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        margin: 50px 10px;
+    }
+
+    .title h1 {
+        font-size: clamp(20px, 8vw, 50px);
+    }
+
+    .line2 {
+        width: 100%;
+    }
 }
 
 /* About */
