@@ -79,6 +79,23 @@ section {
     border-radius: 20px
 }
 
+@media screen and (max-width: 1000px) {
+    #home .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 25px;
+    }
+
+    #home .container .line {
+        height: 20px;
+        width: clamp(250px, 50vw, 500px);
+    }
+
+    #home .container .text p {
+        text-align: center;
+    }
+}
+
 #home .container .text {
     display: flex;
     flex-direction: column;
