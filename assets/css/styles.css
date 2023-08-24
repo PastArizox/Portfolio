@@ -226,3 +226,50 @@ section:nth-child(even) .line2 {
     line-height: 25px;
     font-size: 17px;
 }
+
+/* Projects */
+
+/* Skills */
+
+#skills .skills_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#skills .skills_container .skill {
+    width: clamp(100px, 60vw, 500px);
+    padding: 30px;
+    height: auto;
+    /* background-color: #FF7F50; */
+    border-radius: 50px;
+    box-shadow: 0 0 10px #FF8C00;
+    transition: box-shadow 0.5s;
+}
+
+#skills .skills_container .skill:hover {
+    box-shadow: 0 0 10px #FF4500;
+}
+
+#skills .skills_container .skill h2 {
+    margin-bottom: 30px;
+}
+
+#skills .skills_container .skill img {
+    width: clamp(30px, 15vw, 100px);
+}
+
+#skills .skills_container .skill .content_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+#skills .skills_container .skill .content_list .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
