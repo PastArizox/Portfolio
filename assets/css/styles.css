@@ -6,8 +6,8 @@
     --family-font: 'DM Sans', sans-serif;
 
     --h1: bold 54px/64px var(--family-font);
-    --h2: bold 36/36 var(--family-font);
-    --h3: bold 24/30 var(--family-font);
+    --h2: bold 36px/36px var(--family-font);
+    --h3: bold 24px/30px var(--family-font);
     --links: bold 54px/64px var(--family-font);
     --p: 18px/30px var(--family-font);
     --subtext: 12px/20px var(--family-font);
@@ -46,6 +46,10 @@ p {
     font: var(--subtext);
 }
 
+.accent {
+    color: var(--color-accent);
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -59,7 +63,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: clamp(0px, 80%, 1080px);
+    width: clamp(0px, 80%, 1920px);
 }
 
 .navbar ul {
@@ -72,9 +76,38 @@ header {
     padding: 10px 20px;
 }
 
+.burger-button {
+    display: none;
+}
+
 section {
     margin: 80px auto 0px auto;
     max-width: 1080px;
+}
+
+.hero {
+    height: calc(100vh - 80px);
+    max-width: 100%;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(50px, 8vw, 200px);
+}
+
+.hero > img {
+    height: 400px;
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .burger-button {
+        display: block;
+    }
 }
 
 a {
