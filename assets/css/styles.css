@@ -94,7 +94,8 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: clamp(50px, 8vw, 200px);
+    gap: 5%;
+    transition: gap 0.5s, flex-wrap 0.5s;
 }
 
 .hero > img {
