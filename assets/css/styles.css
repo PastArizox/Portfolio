@@ -1,3 +1,5 @@
+/* Global */
+
 :root {
     --color-primary: black;
     --color-secondary: white;
@@ -39,6 +41,17 @@ p {
     font: var(--p);
 }
 
+section {
+    margin: 80px auto 0px auto;
+    max-width: 1080px;
+}
+
+a {
+    font: var(--family-font);
+    color: black;
+    text-decoration: none;
+}
+
 .link {
     font: var(--links);
 }
@@ -50,6 +63,35 @@ p {
 .accent {
     color: var(--color-accent);
 }
+
+.btn {
+    padding: 5px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font: var(--p);
+}
+
+.btn-in {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.btn-out {
+    border: solid 2px var(--color-accent);
+    color: var(--color-accent);
+}
+
+.btn:hover {
+    scale: 1.05;
+}
+
+.animated-scale {
+    transition: scale 0.5s ease;
+}
+
+/* Header */
 
 header {
     display: flex;
@@ -91,10 +133,7 @@ header {
     }
 }
 
-section {
-    margin: 80px auto 0px auto;
-    max-width: 1080px;
-}
+/* Hero section */
 
 .hero {
     height: calc(100vh - 80px);
@@ -110,14 +149,35 @@ section {
     height: clamp(300px, 30vw, 400px);
 }
 
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero .content > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero .content > div img {
+    height: 50px;
+}
+
 @media screen and (max-width: 800px) {
     .hero {
         flex-direction: column;
     }
-}
 
-a {
-    font: var(--family-font);
-    color: black;
-    text-decoration: none;
+    .hero .content {
+        flex-direction: row;
+    }
+
+    .hero .content > div {
+        flex-direction: column;
+    }
+
+    .hero .content .btn-out {
+        display: none;
+    }
 }
