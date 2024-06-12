@@ -25,6 +25,11 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
 h1 {
     font: var(--h1);
 }
@@ -87,8 +92,17 @@ a {
     scale: 1.05;
 }
 
-.animated-scale {
-    transition: scale 0.5s ease;
+.btn-in:hover {
+    background-color: var(--color-primary);
+}
+
+.btn-out:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.transition {
+    transition: var(--transition);
 }
 
 /* Header */
