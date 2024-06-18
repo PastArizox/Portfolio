@@ -38,7 +38,7 @@ h1 {
 
 h2 {
     font: var(--h2);
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 h3 {
@@ -215,32 +215,32 @@ header {
 
 .skills .table .menu .category {
     padding: 25px 100px;
+    margin-right: -40px;
+    text-wrap: nowrap;
     font: var(--p);
     font-weight: bold;
     text-align: center;
     border: solid 2px black;
-    border-right: none;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 25px;
     box-shadow: var(--shadow);
     background-color: white;
     transition: var(--transition);
+    z-index: 99;
 }
 
 .skills .table .menu .category:hover {
     border: solid 2px var(--color-accent);
-    border-right: none;
-    box-shadow: var(--shadow2);
     translate: 25px;
+    color: var(--color-accent);
 }
 
 .skills .table .content {
-    padding: 50px;
+    padding: 50px 80px 50px calc(40px + 25px + 80px);
     width: 100%;
     border-radius: 25px;
     box-shadow: var(--shadow);
     background-color: white;
-    border: solid 2px var(--color-accent);
-    z-index: 99;
+    border: solid 2px black;
 }
 
 .skills .table .content .list {
@@ -253,6 +253,8 @@ header {
 .skills .table .content .list .skill {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
