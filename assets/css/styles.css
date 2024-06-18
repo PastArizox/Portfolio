@@ -19,6 +19,7 @@
     --shadow: #00000030 0px 0px 10px 0px;
     --shadow2: #00000030 0px 5px 10px 5px;
     --shadow3: rgba(28, 28, 51, 0.15) 0px 0px 10px;
+    --shadow-accent: var(--color-accent) 0px 0px 10px 0px;
 }
 
 * {
@@ -220,11 +221,15 @@ header {
     border-radius: 25px 0px 0px 25px;
     box-shadow: var(--shadow);
     background-color: white;
-    z-index: 2;
+    transition: var(--transition);
+}
+
+.skills .table .menu .selected {
 }
 
 .skills .table .menu .category:hover {
-    padding: 25px 80px;
+    box-shadow: var(--shadow-accent);
+    translate: 25px;
 }
 
 .skills .table .content {
@@ -233,7 +238,7 @@ header {
     border-radius: 25px;
     box-shadow: var(--shadow);
     background-color: white;
-    z-index: 2;
+    z-index: 99;
 }
 
 .skills .table .content .list {
