@@ -218,17 +218,18 @@ header {
     font: var(--p);
     font-weight: bold;
     text-align: center;
+    border: solid 2px black;
+    border-right: none;
     border-radius: 25px 0px 0px 25px;
     box-shadow: var(--shadow);
     background-color: white;
     transition: var(--transition);
 }
 
-.skills .table .menu .selected {
-}
-
 .skills .table .menu .category:hover {
-    box-shadow: var(--shadow-accent);
+    border: solid 2px var(--color-accent);
+    border-right: none;
+    box-shadow: var(--shadow2);
     translate: 25px;
 }
 
@@ -238,6 +239,7 @@ header {
     border-radius: 25px;
     box-shadow: var(--shadow);
     background-color: white;
+    border: solid 2px var(--color-accent);
     z-index: 99;
 }
 
