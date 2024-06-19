@@ -45,6 +45,12 @@ h3 {
     font: var(--h3);
 }
 
+@media screen and (max-width: 800px) {
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+
 p {
     font: var(--p);
 }
@@ -313,7 +319,7 @@ header {
     }
 
     .skills .table .menu .category {
-        padding: 25px 50px;
+        padding: 15px 25px;
         margin-right: 0px;
     }
 
@@ -329,6 +335,15 @@ header {
     }
 
     .skills .table .content .list {
-        gap: 15px;
+        gap: 10px;
+    }
+
+    .skills .table .content .list .skill {
+        gap: 10px;
+    }
+
+    .skills .table .content .list .skill img {
+        height: 80px;
+        width: 80px;
     }
 }
