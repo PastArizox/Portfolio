@@ -1,12 +1,12 @@
 [
     {
         "name": "HTML",
-        "icon": "https://place-old.it/100x100",
+        "icon": "https://place-hold.it/100x100",
         "url": "https://wikipedia.org/wiki/HTML"
     },
     {
         "name": "CSS",
-        "icon": "https://place-old.it/100x100",
+        "icon": "https://place-hold.it/100x100",
         "url": "https://wikipedia.org/wiki/CSS"
     }
 ]
