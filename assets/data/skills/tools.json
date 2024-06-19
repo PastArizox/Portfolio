@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Visual Studio",
+        "icon": "https://place-old.it/100x100",
+        "url": "https://visualstudio.microsoft.com/"
+    },
+    {
+        "name": "Visual Studio Code",
+        "icon": "https://place-old.it/100x100",
+        "url": "https://code.visualstudio.com/"
+    }
+]
