@@ -228,6 +228,12 @@ header {
     z-index: 99;
 }
 
+.skills .table .menu .active {
+    border: solid 2px var(--color-accent);
+    translate: 25px;
+    color: var(--color-accent);
+}
+
 .skills .table .menu .category:hover {
     border: solid 2px var(--color-accent);
     translate: 25px;
@@ -261,6 +267,11 @@ header {
 .skills .table .content .list .skill img {
     height: 100px;
     width: 100px;
+    transition: var(--transition);
+}
+
+.skills .table .content .list .skill img:hover {
+    scale: 1.1;
 }
 
 .skills .table .content .list .skill span {

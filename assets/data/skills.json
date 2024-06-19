@@ -1,0 +1,43 @@
+{
+    "software": [
+        {
+            "name": "Java",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://www.java.com/"
+        }
+    ],
+
+    "back-end": [
+        {
+            "name": "Dotnet",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://dotnet.microsoft.com/"
+        }
+    ],
+
+    "front-end": [
+        {
+            "name": "HTML",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://wikipedia.org/wiki/HTML"
+        },
+        {
+            "name": "CSS",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://wikipedia.org/wiki/CSS"
+        }
+    ],
+
+    "tools": [
+        {
+            "name": "Visual Studio",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://visualstudio.microsoft.com/"
+        },
+        {
+            "name": "Visual Studio Code",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://code.visualstudio.com/"
+        }
+    ]
+}
