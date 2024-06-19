@@ -294,8 +294,6 @@ header {
     line-height: 20px;
 }
 
-/* TODO Make skills responsive */
-
 @media screen and (max-width: 800px) {
     .skills .table {
         flex-direction: column;
