@@ -17,7 +17,9 @@
 
     --transition: 0.3s ease-in-out;
     --shadow: #00000030 0px 0px 10px 0px;
-    --shadow: #00000030 0px 5px 10px 5px;
+    --shadow2: #00000030 0px 5px 10px 5px;
+    --shadow3: rgba(28, 28, 51, 0.15) 0px 0px 10px;
+    --shadow-accent: var(--color-accent) 0px 0px 10px 0px;
 }
 
 * {
@@ -36,6 +38,7 @@ h1 {
 
 h2 {
     font: var(--h2);
+    margin-bottom: 100px;
 }
 
 h3 {
@@ -47,7 +50,8 @@ p {
 }
 
 section {
-    margin: 80px auto 0px auto;
+    margin: 80px auto;
+    padding: 0 30px;
     max-width: 1080px;
 }
 
@@ -103,6 +107,19 @@ a {
 
 .transition {
     transition: var(--transition);
+}
+
+.fade-in {
+    animation: fadeIn ease-out 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Header */
@@ -193,5 +210,125 @@ header {
 
     .hero .content .btn-out {
         display: none;
+    }
+}
+
+/* Skills section */
+
+.skills .table {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.skills .table .menu {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills .table .menu .category {
+    padding: 25px 100px;
+    margin-right: -40px;
+    text-wrap: nowrap;
+    font: var(--p);
+    font-weight: bold;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    background-color: white;
+    transition: var(--transition);
+    z-index: 99;
+}
+
+.skills .table .menu .active {
+    border: solid 2px var(--color-accent);
+    translate: 25px;
+    color: var(--color-accent);
+}
+
+.skills .table .menu .category:hover {
+    border: solid 2px var(--color-accent);
+    translate: 25px;
+    color: var(--color-accent);
+}
+
+.skills .table .content {
+    padding: 50px 80px 50px calc(40px + 25px + 80px);
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    background-color: white;
+    border: solid 2px black;
+}
+
+.skills .table .content .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.skills .table .content .list .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills .table .content .list .skill img {
+    height: 100px;
+    width: 100px;
+    transition: var(--transition);
+}
+
+.skills .table .content .list .skill img:hover {
+    scale: 1.1;
+}
+
+.skills .table .content .list .skill span {
+    text-align: center;
+    font: var(--p);
+    line-height: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .skills .table {
+        flex-direction: column;
+    }
+
+    .skills .table .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills .table .menu .active {
+        border: solid 2px var(--color-accent);
+        translate: 0px;
+        color: var(--color-accent);
+    }
+
+    .skills .table .menu .category {
+        padding: 25px 50px;
+        margin-right: 0px;
+    }
+
+    .skills .table .menu .category:hover {
+        border: solid 2px var(--color-accent);
+        translate: 0px;
+        color: var(--color-accent);
+    }
+
+    .skills .table .content {
+        width: calc(100% - 60px);
+        padding: 30px;
+    }
+
+    .skills .table .content .list {
+        gap: 15px;
     }
 }
