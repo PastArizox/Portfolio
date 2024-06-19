@@ -18,7 +18,7 @@ function makeSkillListElement({ skills, categoryName }) {
     });
 
     return `
-    <div class="list ${categoryName}">
+    <div class="list fade-in ${categoryName}">
         ${skillElements}
     </div>
     `;

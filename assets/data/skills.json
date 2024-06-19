@@ -4,6 +4,16 @@
             "name": "Java",
             "icon": "https://place-hold.it/100x100",
             "url": "https://www.java.com/"
+        },
+        {
+            "name": "JavaFx",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://openjfx.io/"
+        },
+        {
+            "name": "Dotnet",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://dotnet.microsoft.com/"
         }
     ],
 
@@ -12,6 +22,31 @@
             "name": "Dotnet",
             "icon": "https://place-hold.it/100x100",
             "url": "https://dotnet.microsoft.com/"
+        },
+        {
+            "name": "C#",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+        },
+        {
+            "name": "Java",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://www.java.com/"
+        },
+        {
+            "name": "PostgreSQL",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://www.postgresql.org/"
+        },
+        {
+            "name": "MySQL",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://www.mysql.com/"
+        },
+        {
+            "name": "Spring",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://spring.io/"
         }
     ],
 
@@ -25,6 +60,21 @@
             "name": "CSS",
             "icon": "https://place-hold.it/100x100",
             "url": "https://wikipedia.org/wiki/CSS"
+        },
+        {
+            "name": "React",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://reactjs.org/"
+        },
+        {
+            "name": "Vue.js",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://vuejs.org/"
+        },
+        {
+            "name": "Javascript",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
         }
     ],
 
@@ -38,6 +88,41 @@
             "name": "Visual Studio Code",
             "icon": "https://place-hold.it/100x100",
             "url": "https://code.visualstudio.com/"
+        },
+        {
+            "name": "IntelliJ IDEA",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://www.jetbrains.com/idea/"
+        },
+        {
+            "name": "GitHub Actions",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://github.com/features/actions"
+        },
+        {
+            "name": "Jenkins",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://jenkins.io/"
+        },
+        {
+            "name": "Windows Server",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://www.microsoft.com/en-us/cloud-platform/windows-server"
+        },
+        {
+            "name": "Git",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://git-scm.com/"
+        },
+        {
+            "name": "Node",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://nodejs.org/"
+        },
+        {
+            "name": "Linux",
+            "icon": "https://place-hold.it/100x100",
+            "url": "https://www.linux.org/"
         }
     ]
 }

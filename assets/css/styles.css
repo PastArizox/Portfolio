@@ -108,6 +108,19 @@ a {
     transition: var(--transition);
 }
 
+.fade-in {
+    animation: fadeIn ease-out 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Header */
 
 header {
@@ -259,7 +272,6 @@ header {
 .skills .table .content .list .skill {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -277,4 +289,7 @@ header {
 .skills .table .content .list .skill span {
     text-align: center;
     font: var(--p);
+    line-height: 20px;
 }
+
+/* TODO Make skills responsive */
