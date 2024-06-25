@@ -352,9 +352,9 @@ header {
 
 .projects .list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .projects .list .project {
@@ -370,19 +370,25 @@ header {
 .projects .list .project:hover {
     box-shadow: var(--shadow2);
     border: solid 2px var(--color-accent);
-    translate: 0px -20px;
+    translate: 0px -10px;
 }
 
-.projects .list .project > img {
-    height: 200px;
-    width: 100%;
-    border-radius: 15px;
+.projects .list .project h3 {
     transition: var(--transition);
 }
 
+.projects .list .project:hover h3 {
+    color: var(--color-accent);
+}
+
+.projects .list .project > img {
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+}
+
 .projects .list .project .content {
-    height: 100%;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -396,7 +402,8 @@ header {
 
 .projects .list .project .content .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
 }
 
