@@ -74,3 +74,38 @@ fetch('assets/data/skills.json')
     .then(() => {
         skillCategories[0].click();
     });
+
+fetch('assets/data/projects.json')
+    .then((response) => response.json())
+    .then((projects) => {
+        const projectListElement = document.querySelector('.projects .list');
+
+        projects.forEach((project) => {
+            const projectElement = `
+            <a class="project" href="${project.link}" target="_blank">
+                <img
+                    src="${project.image}"
+                    alt="${project.name} Image"
+                />
+                <div class="content">
+                    <h3>${project.name}</h3>
+                    <p class="description">
+                        ${project.description}
+                    </p>
+                    <div class="footer">
+                        <p>${project.date}</p>
+                        <p>
+                        ${project.langages.map((langage) => langage).join(', ')}
+                        </p>
+                        <img
+                            src="https://place-hold.it/25x25"
+                            alt="Github logo"
+                        />
+                    </div>
+                </div>
+            </a>
+            `;
+
+            projectListElement.innerHTML += projectElement;
+        });
+    });
