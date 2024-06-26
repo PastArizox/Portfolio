@@ -13,7 +13,7 @@
     --h3: bold 24px/30px var(--family-font);
     --links: bold 54px/64px var(--family-font);
     --p: 18px/30px var(--family-font);
-    --subtext: 12px/20px var(--family-font);
+    --subtext: 15px/25px var(--family-font);
 
     --transition: 0.3s ease-in-out;
     --shadow: #00000030 0px 0px 10px 0px;
@@ -268,12 +268,13 @@ header {
     box-shadow: var(--shadow);
     background-color: white;
     border: solid 2px black;
+    overflow: hidden;
 }
 
 .skills .table .content .list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 100px);
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 50px;
 }
 
@@ -365,6 +366,7 @@ header {
     background-color: white;
     transition: var(--transition);
     border: solid 2px black;
+    overflow: hidden;
 }
 
 .projects .list .project:hover {
@@ -382,29 +384,46 @@ header {
 }
 
 .projects .list .project > img {
-    height: auto;
+    height: 150px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 0 0 25px 25px;
 }
 
 .projects .list .project .content {
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
 }
 
 .projects .list .project .content .description {
-    text-align: justify;
+    text-align: left;
 }
 
 .projects .list .project .content .footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 30px;
     width: 100%;
+    margin-top: auto;
+}
+
+.projects .list .project .content .footer p {
+    font: var(--subtext);
+    text-align: center;
+}
+
+.projects .list .project .content .footer a {
+    display: flex;
+    align-items: center;
+}
+
+.projects .list .project .content .footer img {
+    height: 25px;
 }
 
 /* Footer */
