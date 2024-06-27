@@ -86,29 +86,14 @@ a {
     align-items: center;
     border-radius: 10px;
     font: var(--p);
-}
-
-.btn-in {
-    background-color: var(--color-accent);
-    color: white;
-}
-
-.btn-out {
     border: solid 2px var(--color-accent);
     color: var(--color-accent);
 }
 
 .btn:hover {
-    scale: 1.05;
-}
-
-.btn-in:hover {
-    background-color: var(--color-primary);
-}
-
-.btn-out:hover {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    /* scale: 1.05; */
+    background-color: var(--color-accent);
+    color: white;
 }
 
 .transition {
