@@ -27,7 +27,7 @@ function makeSkillListElement({ skills, categoryName }) {
 // Show/Hide Skills
 
 const skillCategories = document.querySelectorAll(
-    '.skills .table .menu .category'
+    '#skills .table .menu .category'
 );
 
 skillCategories.forEach((category) => {
@@ -42,11 +42,11 @@ skillCategories.forEach((category) => {
 
         const categoryName = event.target.getAttribute('data-category');
         const categoryElement = document.querySelector(
-            `.skills .table .content .${categoryName}`
+            `#skills .table .content .${categoryName}`
         );
 
         document
-            .querySelectorAll('.skills .table .content .list')
+            .querySelectorAll('#skills .table .content .list')
             .forEach((list) => {
                 list.style.display = 'none';
             });
@@ -67,7 +67,7 @@ fetch('assets/data/skills.json')
                 skills: skills[categoryName],
                 categoryName,
             });
-            document.querySelector('.skills .table .content').innerHTML +=
+            document.querySelector('#skills .table .content').innerHTML +=
                 skillListElement;
         });
     })
@@ -78,7 +78,7 @@ fetch('assets/data/skills.json')
 fetch('assets/data/projects.json')
     .then((response) => response.json())
     .then((projects) => {
-        const projectListElement = document.querySelector('.projects .list');
+        const projectListElement = document.querySelector('#projects .list');
 
         projects.forEach((project) => {
             const projectElement = `
