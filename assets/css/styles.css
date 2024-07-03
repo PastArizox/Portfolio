@@ -428,6 +428,46 @@ header {
     height: 25px;
 }
 
+/* Experiences */
+
+#experiences .list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#experiences .list .experience {
+    height: 20rem;
+    display: flex;
+    width: clamp(300px, 80%, 1080px);
+}
+
+#experiences .list .experience img {
+    z-index: 99;
+    object-fit: cover;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 25px;
+    border: solid 2px black;
+    box-shadow: var(--shadow);
+}
+
+#experiences .list .experience .content {
+    box-sizing: border-box;
+    height: calc(100% - 40px);
+    overflow: hidden;
+    padding: 50px;
+    margin: 20px 0px 20px -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 0px 25px 25px 0px;
+    border: solid 2px black;
+    box-shadow: var(--shadow);
+    z-index: 1;
+}
+
 /* Footer */
 
 footer {
