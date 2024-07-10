@@ -25,6 +25,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -226,6 +227,8 @@ header {
 #skills .table {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -432,40 +435,106 @@ header {
 
 #experiences .list {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    gap: 100px;
+}
+
+#experiences .list .experience:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#experiences .list .experience:nth-child(even) .content {
+    border: solid 2px black;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    align-items: flex-end;
+}
+
+#experiences .list .experience:nth-child(even) .content p {
+    text-align: right;
 }
 
 #experiences .list .experience {
-    height: 20rem;
     display: flex;
-    width: clamp(300px, 80%, 1080px);
+    /* width: 80%; */
+    width: clamp(300px, 80%, 1000px);
 }
 
 #experiences .list .experience img {
-    z-index: 99;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    height: 20rem;
-    width: 20rem;
-    border-radius: 25px;
     border: solid 2px black;
+    border-radius: 25px;
     box-shadow: var(--shadow);
+    z-index: 99;
 }
 
 #experiences .list .experience .content {
-    box-sizing: border-box;
-    height: calc(100% - 40px);
-    overflow: hidden;
-    padding: 50px;
-    margin: 20px 0px 20px -20px;
+    width: clamp(300px, 70%, 1000px);
+    border: solid 2px black;
+    border-left: none;
+    padding: 30px;
+    border-radius: 0 25px 25px 0;
+    margin: 20px 0 20px 0;
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    border-radius: 0px 25px 25px 0px;
-    border: solid 2px black;
-    box-shadow: var(--shadow);
+    justify-content: space-around;
+    max-height: calc(300px - 40px);
+    overflow: hidden;
     z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+    #experiences .list {
+        gap: 50px;
+    }
+
+    #experiences .list .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experiences .list .experience:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experiences .list .experience .content h3 {
+        font-size: 1.1rem;
+    }
+
+    #experiences .list .experience .content p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    #experiences .list .experience .content span {
+        font-size: 0.7rem;
+    }
+
+    #experiences .list .experience img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #experiences .list .experience .content,
+    #experiences .list .experience .content:nth-child(even) {
+        width: 100%;
+        border: solid 2px black;
+        border-radius: 25px;
+        margin: -20px 0 0 0;
+        max-width: none;
+        overflow: visible;
+        align-items: center;
+    }
+
+    #experiences .list .experience .content p,
+    #experiences .list .experience .content:nth-child(even) p {
+        text-align: center;
+    }
 }
 
 /* Footer */
