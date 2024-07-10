@@ -227,8 +227,8 @@ header {
 #skills .table {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     width: 100%;
 }
 
