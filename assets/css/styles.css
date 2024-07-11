@@ -138,6 +138,9 @@ header {
     align-items: center;
     width: 100%;
     height: 80px;
+    position: fixed;
+    background-color: var(--color-secondary);
+    z-index: 1000;
 }
 
 .navbar {
@@ -158,7 +161,7 @@ header {
     padding: 10px 20px;
 }
 
-.burger-button {
+.burger {
     display: none;
 }
 
@@ -167,15 +170,18 @@ header {
         display: none;
     }
 
-    .burger-button {
+    .burger {
         display: block;
     }
 }
 
+/* Side navbar */
+
 /* Hero section */
 
 #hero {
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
+    height: 100vh;
     max-width: 100%;
     margin: 0px 50px;
     padding: 0px 30px;
