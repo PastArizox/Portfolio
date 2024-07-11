@@ -25,6 +25,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -197,10 +198,12 @@ header {
 #hero .content > div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #hero .content > div img {
     height: 50px;
+    width: 50px;
 }
 
 @media screen and (max-width: 800px) {
@@ -216,7 +219,7 @@ header {
         flex-direction: column;
     }
 
-    #hero .content .btn-out {
+    #hero .content .btn {
         display: none;
     }
 }
@@ -241,7 +244,6 @@ header {
     margin-right: -40px;
     text-wrap: nowrap;
     font: var(--p);
-    font-weight: bold;
     text-align: center;
     border: solid 2px black;
     border-radius: 25px;
@@ -249,6 +251,7 @@ header {
     background-color: white;
     transition: var(--transition);
     z-index: 99;
+    white-space: nowrap;
 }
 
 #skills .table .menu .active {
@@ -306,6 +309,7 @@ header {
 @media screen and (max-width: 800px) {
     #skills .table {
         flex-direction: column;
+        align-items: center;
     }
 
     #skills .table .menu {
@@ -426,6 +430,112 @@ header {
 
 #projects .list .project .content .footer img {
     height: 25px;
+}
+
+/* Experiences */
+
+#experiences .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#experiences .list .experience:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#experiences .list .experience:nth-child(even) .content {
+    border: solid 2px black;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    align-items: flex-end;
+}
+
+#experiences .list .experience:nth-child(even) .content p {
+    text-align: right;
+}
+
+#experiences .list .experience {
+    display: flex;
+    /* width: 80%; */
+    width: clamp(300px, 80%, 1000px);
+}
+
+#experiences .list .experience img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 2px black;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    z-index: 99;
+}
+
+#experiences .list .experience .content {
+    width: clamp(300px, 70%, 1000px);
+    border: solid 2px black;
+    border-left: none;
+    padding: 30px;
+    border-radius: 0 25px 25px 0;
+    margin: 20px 0 20px 0;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: calc(300px - 40px);
+    overflow: hidden;
+    z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+    #experiences .list {
+        gap: 50px;
+    }
+
+    #experiences .list .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experiences .list .experience:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experiences .list .experience .content h3 {
+        font-size: 1.1rem;
+    }
+
+    #experiences .list .experience .content p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    #experiences .list .experience .content span {
+        font-size: 0.7rem;
+    }
+
+    #experiences .list .experience img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #experiences .list .experience .content,
+    #experiences .list .experience .content:nth-child(even) {
+        width: 100%;
+        border: solid 2px black;
+        border-radius: 25px;
+        margin: -20px 0 0 0;
+        max-width: none;
+        overflow: visible;
+        align-items: center;
+    }
+
+    #experiences .list .experience .content p,
+    #experiences .list .experience .content:nth-child(even) p {
+        text-align: center;
+    }
 }
 
 /* Footer */

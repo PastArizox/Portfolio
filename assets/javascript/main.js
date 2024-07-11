@@ -109,3 +109,33 @@ fetch('assets/data/projects.json')
             projectListElement.innerHTML += projectElement;
         });
     });
+
+fetch('assets/data/experiences.json')
+    .then((response) => response.json())
+    .then((experiences) => {
+        const experienceListElement =
+            document.querySelector('#experiences .list');
+
+        experiences.forEach((experience) => {
+            const experienceElement = `
+            <div class="experience">
+                <img
+                    src="https://place-hold.it/700x500"
+                    alt="${experience.name} image"
+                />
+                <div class="content">
+                    <h3 class="title">${experience.name}</h3>
+                    <p class="description">
+                        ${experience.description}
+                    </p>
+                    <div class="footer">
+                        <span>${experience.date}</span> | 
+                        <span>${experience.location}</span>
+                    </div>
+                </div>
+            </div>
+            `;
+
+            experienceListElement.innerHTML += experienceElement;
+        });
+    });

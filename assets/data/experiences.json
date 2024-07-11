@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Alternance IBM-CIC",
+        "description": "J'ai réalisé une alternance chez IBM-CIC en tant que DevOps .NET. J'ai notamment réalisé une chaîne de déploiement pour des applications ASP.NET.",
+        "date": "2023-2024",
+        "location": "Lille"
+    },
+    {
+        "name": "Stage IBM-CIC",
+        "description": "J'ai réalisé un stage chez IBM-CIC en tant que Développeur .NET. J'ai pu comprendre comment un projet dans un entreprise de service client fonctionne.",
+        "date": "2023",
+        "location": "Lille"
+    },
+    {
+        "name": "Stage Ingredia",
+        "description": "Description",
+        "date": "2018",
+        "location": "Arras"
+    }
+]
