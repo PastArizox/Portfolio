@@ -198,10 +198,12 @@ header {
 #hero .content > div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #hero .content > div img {
     height: 50px;
+    width: 50px;
 }
 
 @media screen and (max-width: 800px) {
@@ -217,7 +219,7 @@ header {
         flex-direction: column;
     }
 
-    #hero .content .btn-out {
+    #hero .content .btn {
         display: none;
     }
 }
