@@ -1,0 +1,22 @@
+[
+    {
+        "name": "LinkedIn",
+        "url": "https://fr.linkedin.com/in/bastien-marache-ab9a90232",
+        "image": "https://place-hold.it/200x200"
+    },
+    {
+        "name": "Github",
+        "url": "https://github.com/PastArizox",
+        "image": "https://place-hold.it/200x200"
+    },
+    {
+        "name": "Email",
+        "url": "mailto:bastien.marache@gmail.com",
+        "image": "https://place-hold.it/200x200"
+    },
+    {
+        "name": "Discord",
+        "url": "https://discord.name/875075024397156383",
+        "image": "https://place-hold.it/200x200"
+    }
+]
