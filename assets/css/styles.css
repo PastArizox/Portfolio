@@ -547,14 +547,21 @@ header {
 }
 
 #contacts .container .list {
-    width: clamp(300px, 80%, 1000px);
+    width: clamp(300px, 90%, 1000px);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
 }
 
-#contacts .container .contact {
+#contacts .container .list .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#contacts .container .list .contact > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -565,13 +572,13 @@ header {
     transition: var(--transition);
 }
 
-#contacts .container .contact:hover {
+#contacts .container .list .contact:hover > a {
     border: solid 2px var(--color-accent);
     box-shadow: var(--shadow2);
     scale: 1.05;
 }
 
-#contacts .container .contact > img {
+#contacts .container .list .contact img {
     height: 90px;
     width: 90px;
 }
