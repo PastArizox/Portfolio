@@ -62,7 +62,7 @@ p {
 
 section {
     margin: 50px auto;
-    padding: 100px 30px;
+    padding: 150px 30px;
     max-width: 1080px;
 }
 
@@ -137,10 +137,16 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: auto;
+    position: fixed;
+    border-bottom: solid 1px black;
+    transition: var(--transition);
+    background-color: var(--color-secondary);
+    z-index: 1000;
 }
 
 .navbar {
+    padding: 20px 0;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -154,11 +160,19 @@ header {
     list-style: none;
 }
 
-.navbar ul li > * {
+.navbar ul li a {
+    display: block;
     padding: 10px 20px;
+    transition: var(--transition);
 }
 
-.burger-button {
+.navbar ul li a:hover {
+    background-color: beige;
+}
+
+.burger {
+    width: 40px;
+    height: 40px;
     display: none;
 }
 
@@ -167,15 +181,64 @@ header {
         display: none;
     }
 
-    .burger-button {
+    .navbar {
+        display: flex;
+        align-items: start;
+    }
+
+    .navbar ul {
+        margin-top: 60px;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar ul li a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .burger {
         display: block;
     }
 }
 
+/* Side navbar */
+
+/* .side {
+    display: flex;
+    align-items: start;
+}
+
+.side ul {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.side ul li {
+    width: 100%;
+    height: 100%;
+}
+
+.side ul li a {
+    width: 100%;
+    height: 100%;
+} */
+
 /* Hero section */
 
 #hero {
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
+    height: 100vh;
     max-width: 100%;
     margin: 0px 50px;
     padding: 0px 30px;

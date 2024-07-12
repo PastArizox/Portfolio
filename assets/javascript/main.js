@@ -163,3 +163,14 @@ fetch('assets/data/contacts.json')
             contactListElement.innerHTML += contactElement;
         });
     });
+
+function initBurgerButton() {
+    const burgerButton = document.querySelector('.burger');
+    const navbar = document.querySelector('.navbar ul');
+
+    burgerButton.addEventListener('click', () => {
+        navbar.style.display = navbar.style.display == '' ? 'flex' : '';
+    });
+}
+
+initBurgerButton();
