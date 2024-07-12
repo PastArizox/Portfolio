@@ -62,7 +62,7 @@ p {
 
 section {
     margin: 50px auto;
-    padding: 100px 30px;
+    padding: 150px 30px;
     max-width: 1080px;
 }
 
@@ -137,13 +137,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: auto;
     position: fixed;
     background-color: var(--color-secondary);
     z-index: 1000;
 }
 
 .navbar {
+    padding: 20px 0;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -157,11 +158,19 @@ header {
     list-style: none;
 }
 
-.navbar ul li > * {
+.navbar ul li a {
+    display: block;
     padding: 10px 20px;
+    transition: var(--transition);
+}
+
+.navbar ul li a:hover {
+    background-color: beige;
 }
 
 .burger {
+    width: 40px;
+    height: 40px;
     display: none;
 }
 
@@ -176,6 +185,35 @@ header {
 }
 
 /* Side navbar */
+
+header {
+    border-bottom: solid 1px black;
+    transition: var(--transition);
+}
+
+.side {
+    display: flex;
+    align-items: start;
+}
+
+.side ul {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    /* background-color: #f66e3d; */
+}
+
+.side ul li {
+    width: 100%;
+    height: 100%;
+}
+
+.side ul li a {
+    width: 100%;
+    height: 100%;
+}
 
 /* Hero section */
 
