@@ -166,10 +166,10 @@ fetch('assets/data/contacts.json')
 
 function initBurgerButton() {
     const burgerButton = document.querySelector('.burger');
-    const navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('.navbar ul');
 
     burgerButton.addEventListener('click', () => {
-        navbar.classList.toggle('side');
+        navbar.style.display = navbar.style.display == '' ? 'flex' : '';
     });
 }
 

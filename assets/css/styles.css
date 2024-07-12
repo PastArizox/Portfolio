@@ -139,6 +139,8 @@ header {
     width: 100%;
     height: auto;
     position: fixed;
+    border-bottom: solid 1px black;
+    transition: var(--transition);
     background-color: var(--color-secondary);
     z-index: 1000;
 }
@@ -179,6 +181,29 @@ header {
         display: none;
     }
 
+    .navbar {
+        display: flex;
+        align-items: start;
+    }
+
+    .navbar ul {
+        margin-top: 60px;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar ul li a {
+        width: 100%;
+        height: 100%;
+    }
+
     .burger {
         display: block;
     }
@@ -186,12 +211,7 @@ header {
 
 /* Side navbar */
 
-header {
-    border-bottom: solid 1px black;
-    transition: var(--transition);
-}
-
-.side {
+/* .side {
     display: flex;
     align-items: start;
 }
@@ -202,7 +222,6 @@ header {
     flex-direction: column;
     align-items: start;
     width: 100%;
-    /* background-color: #f66e3d; */
 }
 
 .side ul li {
@@ -213,7 +232,7 @@ header {
 .side ul li a {
     width: 100%;
     height: 100%;
-}
+} */
 
 /* Hero section */
 
