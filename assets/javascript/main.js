@@ -120,7 +120,7 @@ fetch('assets/data/experiences.json')
             const experienceElement = `
             <div class="experience">
                 <img
-                    src="https://place-hold.it/700x500"
+                    src="${experience.image}"
                     alt="${experience.name} image"
                 />
                 <div class="content">
