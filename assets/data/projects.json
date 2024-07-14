@@ -17,7 +17,7 @@
     },
     {
         "link": "https://google.com/",
-        "image": "https://place-hold.it/500x500",
+        "image": "assets/picture/circleio.png",
         "name": "Circle.io",
         "description": "Circle.io est un jeu en local multijoueur développé en JavaScript. Les joueurs peuvent s'affronter dans une arène et gagner des points en éliminant leurs adversaires. C'est une copie du jeu Agar.io",
         "date": "2023",
@@ -25,7 +25,7 @@
     },
     {
         "link": "https://github.com/PastArizox/EscapeGame",
-        "image": "https://place-hold.it/500x500",
+        "image": "assets/picture/escape-game.png",
         "name": "Escape Game Éducatif",
         "description": "Un escape game conçu pour apprendre à utiliser des bases de données, destiné aux étudiants de première année. Réalisé dans le cadre d'un cours à l'université, ce jeu interactif et ludique aide les participants à maîtriser les bases des bases de données tout en s'amusant.",
         "date": "2022",
@@ -33,7 +33,7 @@
     },
     {
         "link": "https://github.com/PastArizox/Discord-RPC-Maker",
-        "image": "https://place-hold.it/500x500",
+        "image": "assets/picture/discord-rpc-maker.png",
         "name": "Discord RPC Maker",
         "description": "Discord RPC Maker est une application Windows permettant d'afficher et de personnaliser un RPC (Rich Presence) sur Discord. Elle permet aux utilisateurs de personnaliser leur statut avec des images, du texte et bien plus encore, améliorant ainsi leur expérience sur Discord.",
         "date": "2022",

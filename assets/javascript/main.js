@@ -98,7 +98,7 @@ fetch('assets/data/projects.json')
                         ${project.langages.map((langage) => langage).join(', ')}
                         </p>
                         <img
-                            src="https://place-hold.it/25x25"
+                            src="assets/logo/socials/github.svg"
                             alt="Github logo"
                         />
                     </div>
