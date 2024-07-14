@@ -154,6 +154,13 @@ header {
     width: clamp(0px, 80%, 1920px);
 }
 
+.navbar > img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 .navbar ul {
     display: flex;
     align-items: center;
@@ -250,6 +257,23 @@ header {
 
 #hero > img {
     height: clamp(300px, 30vw, 400px);
+    width: clamp(300px, 30vw, 400px);
+    object-fit: cover;
+    /* -webkit-mask-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 1)),
+        to(rgba(0, 0, 0, 0))
+    ); */
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+    );
 }
 
 #hero .content {
@@ -341,7 +365,7 @@ header {
 
 #skills .table .content .list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-columns: repeat(auto-fill, 80px);
     justify-content: space-around;
     gap: 50px;
 }
@@ -354,8 +378,8 @@ header {
 }
 
 #skills .table .content .list .skill img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     transition: var(--transition);
 }
 
@@ -456,6 +480,7 @@ header {
     height: 150px;
     width: 100%;
     border-radius: 0 0 25px 25px;
+    object-fit: cover;
 }
 
 #projects .list .project .content {

@@ -98,7 +98,7 @@ fetch('assets/data/projects.json')
                         ${project.langages.map((langage) => langage).join(', ')}
                         </p>
                         <img
-                            src="https://place-hold.it/25x25"
+                            src="assets/logo/socials/github.svg"
                             alt="Github logo"
                         />
                     </div>
@@ -120,7 +120,7 @@ fetch('assets/data/experiences.json')
             const experienceElement = `
             <div class="experience">
                 <img
-                    src="https://place-hold.it/700x500"
+                    src="${experience.image}"
                     alt="${experience.name} image"
                 />
                 <div class="content">
