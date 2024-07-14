@@ -154,6 +154,13 @@ header {
     width: clamp(0px, 80%, 1920px);
 }
 
+.navbar > img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 .navbar ul {
     display: flex;
     align-items: center;
