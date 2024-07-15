@@ -1,7 +1,7 @@
 [
     {
         "link": "https://github.com/PastArizox/Portfolio",
-        "image": "https://place-hold.it/500x500",
+        "image": "assets/picture/portfolio.png",
         "name": "Portfolio",
         "description": "Explorez mes projets, compétences techniques et expériences professionnelles en tant qu'étudiant en développement informatique. Découvrez mon parcours et mes réalisations.",
         "date": "2022-2024",
