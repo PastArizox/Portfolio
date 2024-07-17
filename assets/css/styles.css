@@ -109,6 +109,10 @@ a {
     animation: fadeIn ease-out 1s;
 }
 
+.animated-scale:hover {
+    scale: 1.1;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -289,6 +293,12 @@ header {
 #hero .content > div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+#hero .content > div a {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
