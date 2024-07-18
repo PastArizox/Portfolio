@@ -64,6 +64,7 @@ section {
     margin: 50px auto;
     padding: 150px 30px;
     max-width: 1080px;
+    min-height: 100vh;
 }
 
 a {
@@ -179,6 +180,10 @@ header {
 
 .navbar ul li a:hover {
     background-color: beige;
+}
+
+.navbar ul li a.active {
+    color: var(--color-accent);
 }
 
 .burger {
