@@ -1,0 +1,103 @@
+#experiences .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#experiences .list .experience:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#experiences .list .experience:nth-child(even) .content {
+    border: solid 2px black;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    align-items: flex-end;
+}
+
+#experiences .list .experience:nth-child(even) .content p {
+    text-align: right;
+}
+
+#experiences .list .experience {
+    display: flex;
+    /* width: 80%; */
+    width: clamp(300px, 80%, 1000px);
+}
+
+#experiences .list .experience img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 2px black;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    z-index: 99;
+}
+
+#experiences .list .experience .content {
+    width: clamp(300px, 70%, 1000px);
+    border: solid 2px black;
+    border-left: none;
+    padding: 30px;
+    border-radius: 0 25px 25px 0;
+    margin: 20px 0 20px 0;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: calc(300px - 40px);
+    overflow: hidden;
+    z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+    #experiences .list {
+        gap: 50px;
+    }
+
+    #experiences .list .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experiences .list .experience:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experiences .list .experience .content h3 {
+        font-size: 1.1rem;
+    }
+
+    #experiences .list .experience .content p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    #experiences .list .experience .content span {
+        font-size: 0.7rem;
+    }
+
+    #experiences .list .experience img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #experiences .list .experience .content,
+    #experiences .list .experience .content:nth-child(even) {
+        width: 100%;
+        border: solid 2px black;
+        border-radius: 25px;
+        margin: -20px 0 0 0;
+        max-width: none;
+        overflow: visible;
+        align-items: center;
+    }
+
+    #experiences .list .experience .content p,
+    #experiences .list .experience .content:nth-child(even) p {
+        text-align: center;
+    }
+}

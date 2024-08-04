@@ -1,0 +1,76 @@
+#projects .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 30px;
+}
+
+#projects .list .project {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    background-color: white;
+    transition: var(--transition);
+    border: solid 2px black;
+    overflow: hidden;
+}
+
+#projects .list .project:hover {
+    box-shadow: var(--shadow2);
+    border: solid 2px var(--color-accent);
+    translate: 0px -10px;
+}
+
+#projects .list .project h3 {
+    transition: var(--transition);
+}
+
+#projects .list .project:hover h3 {
+    color: var(--color-accent);
+}
+
+#projects .list .project > img {
+    height: 150px;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+    border-bottom: 1px solid black;
+    object-fit: cover;
+}
+
+#projects .list .project .content {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+#projects .list .project .content .description {
+    text-align: left;
+}
+
+#projects .list .project .content .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#projects .list .project .content .footer p {
+    font: var(--subtext);
+    text-align: center;
+}
+
+#projects .list .project .content .footer a {
+    display: flex;
+    align-items: center;
+}
+
+#projects .list .project .content .footer img {
+    height: 25px;
+}
