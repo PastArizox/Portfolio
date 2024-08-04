@@ -9,7 +9,7 @@
     },
     {
         "link": "https://github.com/PastArizox/ARI",
-        "image": "https://place-hold.it/500x500",
+        "image": "assets/picture/ari.png",
         "name": "ARI",
         "description": "ARI est un bot Discord développé en TypeScript avec la librairie discord.js. Il offre une gamme de fonctionnalités interactives pour améliorer l'expérience des utilisateurs sur Discord.",
         "date": "2023",
