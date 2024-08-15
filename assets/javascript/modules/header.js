@@ -1,6 +1,6 @@
 function initBurgerButton() {
-    const burgerButton = document.querySelector('.burger');
-    const navbar = document.querySelector('.navbar ul');
+    const burgerButton = document.querySelector('.header__nav-bar__burger');
+    const navbar = document.querySelector('.header__nav-bar__menu');
 
     burgerButton.addEventListener('click', () => {
         navbar.style.display = navbar.style.display == '' ? 'flex' : '';
@@ -9,7 +9,9 @@ function initBurgerButton() {
 
 function initSelectedCategory() {
     document.addEventListener('DOMContentLoaded', () => {
-        const navLinks = document.querySelectorAll('.navbar ul li a');
+        const navLinks = document.querySelectorAll(
+            '.header__nav-bar__menu__item__link'
+        );
         const sections = document.querySelectorAll('section');
 
         const changeLinkState = () => {
