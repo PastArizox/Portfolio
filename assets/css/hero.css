@@ -1,5 +1,4 @@
-#hero {
-    /* height: calc(100vh - 80px); */
+.hero {
     height: 100vh;
     max-width: 100%;
     margin: 0px 50px;
@@ -10,17 +9,33 @@
     gap: 5%;
 }
 
-#hero > img {
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero__content__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero__content__links__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__content__links__link__icon {
+    height: 50px;
+    width: 50px;
+}
+
+.hero__picture {
     height: clamp(300px, 30vw, 400px);
     width: clamp(300px, 30vw, 400px);
     object-fit: cover;
-    /* -webkit-mask-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(0, 0, 0, 1)),
-        to(rgba(0, 0, 0, 0))
-    ); */
     mask-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 1),
@@ -31,43 +46,20 @@
     );
 }
 
-#hero .content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#hero .content > div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#hero .content > div a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#hero .content > div img {
-    height: 50px;
-    width: 50px;
-}
-
 @media screen and (max-width: 800px) {
-    #hero {
+    .hero {
         flex-direction: column;
     }
 
-    #hero .content {
+    .hero__content {
         flex-direction: row;
     }
 
-    #hero .content > div {
+    .hero__content__links {
         flex-direction: column;
     }
 
-    #hero .content .btn {
+    .hero__content__links__button {
         display: none;
     }
 }
