@@ -22,8 +22,14 @@ function initSelectedCategory() {
                 window.scrollY + 50 < sections[index].offsetTop
             ) {}
 
-            navLinks.forEach((link) => link.classList.remove('active'));
-            navLinks[index].classList.add('active');
+            navLinks.forEach((link) =>
+                link.classList.remove(
+                    'header__nav-bar__menu__item__link--active'
+                )
+            );
+            navLinks[index].classList.add(
+                'header__nav-bar__menu__item__link--active'
+            );
         };
 
         changeLinkState();

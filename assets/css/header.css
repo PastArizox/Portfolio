@@ -60,7 +60,7 @@
 @media screen and (max-width: 1100px) {
     .header__nav-bar {
         display: flex;
-        align-items: center;
+        align-items: start;
     }
 
     .header__nav-bar__menu {
