@@ -1,10 +1,10 @@
-#contacts .container {
+.contacts__container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contacts .container .list {
+.contacts__list {
     width: clamp(300px, 90%, 1000px);
     display: flex;
     justify-content: center;
@@ -12,14 +12,14 @@
     gap: 50px;
 }
 
-#contacts .container .list .contact {
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
 }
 
-#contacts .container .list .contact > a {
+.contact__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,13 +30,13 @@
     transition: var(--transition);
 }
 
-#contacts .container .list .contact:hover > a {
+.contact:hover .contact__link {
     border: solid 2px var(--color-accent);
     box-shadow: var(--shadow2);
     scale: 1.05;
 }
 
-#contacts .container .list .contact img {
+.contact__logo {
     height: 90px;
     width: 90px;
 }
