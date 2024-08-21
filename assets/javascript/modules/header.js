@@ -1,6 +1,6 @@
 function initBurgerButton() {
-    const burgerButton = document.querySelector('.burger');
-    const navbar = document.querySelector('.navbar ul');
+    const burgerButton = document.querySelector('.header__nav-bar__burger');
+    const navbar = document.querySelector('.header__nav-bar__menu');
 
     burgerButton.addEventListener('click', () => {
         navbar.style.display = navbar.style.display == '' ? 'flex' : '';
@@ -9,7 +9,9 @@ function initBurgerButton() {
 
 function initSelectedCategory() {
     document.addEventListener('DOMContentLoaded', () => {
-        const navLinks = document.querySelectorAll('.navbar ul li a');
+        const navLinks = document.querySelectorAll(
+            '.header__nav-bar__menu__item__link'
+        );
         const sections = document.querySelectorAll('section');
 
         const changeLinkState = () => {
@@ -20,8 +22,14 @@ function initSelectedCategory() {
                 window.scrollY + 50 < sections[index].offsetTop
             ) {}
 
-            navLinks.forEach((link) => link.classList.remove('active'));
-            navLinks[index].classList.add('active');
+            navLinks.forEach((link) =>
+                link.classList.remove(
+                    'header__nav-bar__menu__item__link--active'
+                )
+            );
+            navLinks[index].classList.add(
+                'header__nav-bar__menu__item__link--active'
+            );
         };
 
         changeLinkState();

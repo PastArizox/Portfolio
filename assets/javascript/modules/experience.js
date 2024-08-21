@@ -1,18 +1,24 @@
 function makeExperienceElement(experience) {
     const experienceElement = `
-    <div class="experience">
+    <div class="experience-card">
         <img
+            class="experience-card__picture"
             src="${experience.image}"
             alt="${experience.name} image"
         />
-        <div class="content">
-            <h3 class="title">${experience.name}</h3>
-            <p class="description">
+        <div class="experience-card__content">
+            <h3 class="experience-card__title">${experience.name}</h3>
+            <p class="experience-card__description">
                 ${experience.description}
             </p>
-            <div class="footer">
-                <span>${experience.date}</span> | 
-                <span>${experience.location}</span>
+            <div class="experience-card__footer">
+                <span class="experience-card__date">
+                    ${experience.date}
+                </span>
+                | 
+                <span class="experience-card__location">
+                    ${experience.location}
+                </span>
             </div>
         </div>
     </div>
@@ -26,7 +32,7 @@ export function loadExperiences() {
         .then((response) => response.json())
         .then((experiences) => {
             const experienceListElement =
-                document.querySelector('#experiences .list');
+                document.querySelector('.experiences__list');
 
             const experienceElements = experiences.map((experience) =>
                 makeExperienceElement(experience)

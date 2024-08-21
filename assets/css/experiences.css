@@ -1,42 +1,30 @@
-#experiences .list {
+.experiences__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 100px;
 }
 
-#experiences .list .experience:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-#experiences .list .experience:nth-child(even) .content {
-    border: solid 2px black;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    align-items: flex-end;
-}
-
-#experiences .list .experience:nth-child(even) .content p {
-    text-align: right;
-}
-
-#experiences .list .experience {
+.experience-card {
     display: flex;
-    /* width: 80%; */
     width: clamp(300px, 80%, 1000px);
 }
 
-#experiences .list .experience img {
+.experience-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.experience-card__picture {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: solid 2px black;
+    border: solid 2px var(--color-accent);
     border-radius: 25px;
     box-shadow: var(--shadow);
     z-index: 99;
 }
 
-#experiences .list .experience .content {
+.experience-card__content {
     width: clamp(300px, 70%, 1000px);
     border: solid 2px black;
     border-left: none;
@@ -52,41 +40,53 @@
     z-index: 1;
 }
 
+.experience-card:nth-child(even) .experience-card__content {
+    border: solid 2px black;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    align-items: flex-end;
+}
+
+.experience-card:nth-child(even) .experience-card__description {
+    text-align: right;
+}
+
 @media screen and (max-width: 900px) {
-    #experiences .list {
+    .experiences__list {
         gap: 50px;
     }
 
-    #experiences .list .experience {
+    .experience-card {
         flex-direction: column;
         align-items: center;
     }
 
-    #experiences .list .experience:nth-child(even) {
+    .experience-card:nth-child(even) {
         flex-direction: column;
         align-items: center;
     }
 
-    #experiences .list .experience .content h3 {
-        font-size: 1.1rem;
-    }
-
-    #experiences .list .experience .content p {
-        font-size: 0.8rem;
-        line-height: 1rem;
-    }
-
-    #experiences .list .experience .content span {
-        font-size: 0.7rem;
-    }
-
-    #experiences .list .experience img {
+    .experience-card__picture {
         width: 200px;
         height: 200px;
     }
 
-    #experiences .list .experience .content,
-    #experiences .list .experience .content:nth-child(even) {
+    .experience-card__title {
+        font-size: 1.1rem;
+    }
+
+    .experience-card__description {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    .experience-card__date,
+    .experience-card__location {
+        font-size: 0.7rem;
+    }
+
+    .experience-card__content,
+    .experience-card:nth-child(even) .experience-card__content {
         width: 100%;
         border: solid 2px black;
         border-radius: 25px;
@@ -96,8 +96,8 @@
         align-items: center;
     }
 
-    #experiences .list .experience .content p,
-    #experiences .list .experience .content:nth-child(even) p {
+    .experience-card__description,
+    .experience-card:nth-child(even) .experience-card__description {
         text-align: center;
     }
 }

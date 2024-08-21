@@ -18,19 +18,58 @@
         <title>Mon Portfolio</title>
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <img src="assets/picture/logo.png" alt="Profile Picture" />
-                <ul>
-                    <li><a href="#hero">Accueil</a></li>
+        <header class="header">
+            <nav class="header__nav-bar">
+                <img
+                    class="header__nav-bar__logo"
+                    src="assets/picture/logo.png"
+                    alt="Profile Picture"
+                />
+                <ul class="header__nav-bar__menu">
+                    <li class="header__nav-bar__menu__item">
+                        <a
+                            class="header__nav-bar__menu__item__link"
+                            href="#hero"
+                        >
+                            Accueil
+                        </a>
+                    </li>
                     <!-- <li><a href="#about">A propos</a></li> -->
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#experiences">Expériences</a></li>
-                    <li><a href="#contacts">Contact</a></li>
+                    <li class="header__nav-bar__menu__item">
+                        <a
+                            class="header__nav-bar__menu__item__link"
+                            href="#skills"
+                        >
+                            Compétences
+                        </a>
+                    </li>
+                    <li class="header__nav-bar__menu__item">
+                        <a
+                            class="header__nav-bar__menu__item__link"
+                            href="#projects"
+                        >
+                            Projets
+                        </a>
+                    </li>
+                    <li class="header__nav-bar__menu__item">
+                        <a
+                            class="header__nav-bar__menu__item__link"
+                            href="#experiences"
+                        >
+                            Expériences
+                        </a>
+                    </li>
+                    <li class="header__nav-bar__menu__item">
+                        <a
+                            class="header__nav-bar__menu__item__link"
+                            href="#contacts"
+                        >
+                            Contact
+                        </a>
+                    </li>
                 </ul>
                 <img
-                    class="burger"
+                    class="header__nav-bar__burger"
                     src="assets/logo/other/burger.svg"
                     alt="Burger button"
                 />
@@ -38,72 +77,102 @@
         </header>
 
         <section id="hero">
-            <div class="content">
+            <div class="hero__content">
                 <h1>
                     Bastien, <br />
                     Etudiant en <br />
                     développement <br />
                     informatique
                 </h1>
-                <div>
-                    <a href="https://github.com/PastArizox" target="_blank">
+                <div class="hero__content__links">
+                    <a
+                        class="hero__content__links__link"
+                        href="https://github.com/PastArizox"
+                        target="_blank"
+                    >
                         <img
-                            class="transition animated-scale"
+                            class="hero__content__links__link__icon transition animated-scale"
                             src="assets/logo/socials/github.svg"
                             alt="Github logo"
                         />
                     </a>
                     <a
+                        class="hero__content__links__link"
                         href="https://fr.linkedin.com/in/bastien-marache-ab9a90232"
                         target="_blank"
                     >
                         <img
-                            class="transition animated-scale"
+                            class="hero__content__links__link__icon transition animated-scale"
                             src="assets/logo/socials/linkedin.svg"
                             alt="LinkedIn logo"
                         />
                     </a>
-                    <a class="btn transition" href="#skills">Voir plus</a>
+                    <a
+                        class="hero__content__links__button btn transition"
+                        href="#skills"
+                    >
+                        Voir plus
+                    </a>
                 </div>
             </div>
-            <img src="assets/picture/me.png" alt="Profile Picture" />
+            <img
+                class="hero__picture"
+                src="assets/picture/me.png"
+                alt="Profile Picture"
+            />
         </section>
 
         <section id="skills">
             <h2>Mes compétences</h2>
-            <div class="table">
-                <div class="menu">
-                    <a href="#" class="category" data-category="software">
+            <div class="skills__table">
+                <div class="skills__table__menu">
+                    <a
+                        href="#"
+                        class="skills__table__menu__category"
+                        data-category="software"
+                    >
                         Applicatif
                     </a>
-                    <a href="#" class="category" data-category="back-end">
+                    <a
+                        href="#"
+                        class="skills__table__menu__category"
+                        data-category="back-end"
+                    >
                         Back-end
                     </a>
-                    <a href="#" class="category" data-category="front-end">
+                    <a
+                        href="#"
+                        class="skills__table__menu__category"
+                        data-category="front-end"
+                    >
                         Front-end
                     </a>
-                    <a href="#" class="category" data-category="tools">
+                    <a
+                        href="#"
+                        class="skills__table__menu__category"
+                        data-category="tools"
+                    >
                         Outils
                     </a>
                 </div>
-                <div class="content"></div>
+                <div class="skills__table__content"></div>
             </div>
         </section>
 
         <section id="projects">
             <h2>Mes projets</h2>
-            <div class="list"></div>
+            <div class="projects__list"></div>
         </section>
 
         <section id="experiences">
             <h2>Mes expériences</h2>
-            <div class="list"></div>
+            <div class="experiences__list"></div>
         </section>
 
         <section id="contacts">
             <h2>Me contacter</h2>
-            <div class="container">
-                <div class="list"></div>
+            <div class="contacts__container">
+                <div class="contacts__list"></div>
             </div>
         </section>
 

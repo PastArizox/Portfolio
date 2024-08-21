@@ -1,11 +1,11 @@
-#projects .list {
+.projects__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-content: center;
     gap: 30px;
 }
 
-#projects .list .project {
+.project {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -16,29 +16,13 @@
     overflow: hidden;
 }
 
-#projects .list .project:hover {
+.project:hover {
     box-shadow: var(--shadow2);
     border: solid 2px var(--color-accent);
     translate: 0px -10px;
 }
 
-#projects .list .project h3 {
-    transition: var(--transition);
-}
-
-#projects .list .project:hover h3 {
-    color: var(--color-accent);
-}
-
-#projects .list .project > img {
-    height: 150px;
-    width: 100%;
-    border-radius: 0 0 25px 25px;
-    border-bottom: 1px solid black;
-    object-fit: cover;
-}
-
-#projects .list .project .content {
+.project__content {
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -48,11 +32,7 @@
     height: 100%;
 }
 
-#projects .list .project .content .description {
-    text-align: left;
-}
-
-#projects .list .project .content .footer {
+.project__footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,16 +41,36 @@
     margin-top: auto;
 }
 
-#projects .list .project .content .footer p {
+.project__picture {
+    height: 150px;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+    border-bottom: 1px solid black;
+    object-fit: cover;
+}
+
+.project__title {
+    transition: var(--transition);
+}
+
+.project:hover .project__title {
+    color: var(--color-accent);
+}
+
+.project__description {
+    text-align: left;
+}
+
+.project__date {
     font: var(--subtext);
     text-align: center;
 }
 
-#projects .list .project .content .footer a {
-    display: flex;
-    align-items: center;
+.project__languages {
+    font: var(--subtext);
+    text-align: center;
 }
 
-#projects .list .project .content .footer img {
+.project__github-logo {
     height: 25px;
 }

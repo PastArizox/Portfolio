@@ -1,8 +1,13 @@
 function makeContactElement(contact) {
     const contactElement = `
     <div class="contact">
-        <a href="${contact.url}" target="_blank">
+        <a
+            class="contact__link"
+            href="${contact.url}"
+            target="_blank"
+        >
             <img
+                class="contact__logo"
                 src="${contact.image}"
                 alt="${contact.name} image"
             />
@@ -18,9 +23,8 @@ export function loadContacts() {
     fetch('assets/data/contacts.json')
         .then((response) => response.json())
         .then((contacts) => {
-            const contactListElement = document.querySelector(
-                '#contacts .container .list'
-            );
+            const contactListElement =
+                document.querySelector('.contacts__list');
 
             const contactElements = contacts.map((contact) =>
                 makeContactElement(contact)
