@@ -55,24 +55,24 @@
     gap: 50px;
 }
 
-.skills-table__content__list__skill {
+.skill {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.skills-table__content__list__skill__logo {
+.skill__logo {
     height: 80px;
     width: 80px;
     transition: var(--transition);
 }
 
-.skills-table__content__list__skill__logo:hover {
+.skill__logo:hover {
     scale: 1.1;
 }
 
-.skills-table__content__list__skill__title {
+.skill__title {
     text-align: center;
     font: var(--p);
     line-height: 20px;
@@ -117,11 +117,11 @@
         gap: 10px;
     }
 
-    .skills-table__content__list__skill {
+    .skill {
         gap: 10px;
     }
 
-    .skills-table__content__list__skill__logo {
+    .skill__logo {
         height: 80px;
         width: 80px;
     }

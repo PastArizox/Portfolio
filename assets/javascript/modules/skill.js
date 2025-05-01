@@ -33,13 +33,13 @@ function initSkillsAnimation() {
 
 function makeSkillElement(skill) {
     return `
-    <a href="${skill.url}" class="skills-table__content__list__skill">
+    <a href="${skill.url}" class="skill">
         <img
-            class="skills-table__content__list__skill__logo"
+            class="skill__logo"
             src="${skill.icon}"
             alt="${skill.name} logo"
         />
-        <span class="skills-table__content__list__skill__title">
+        <span class="skill__title">
             ${skill.name}
         </span>
     </a>
