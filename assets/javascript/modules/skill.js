@@ -21,7 +21,7 @@ function initSkillsAnimation() {
             );
 
             document
-                .querySelectorAll('.skills-table__content__list')
+                .querySelectorAll('.skills__list')
                 .forEach((list) => {
                     list.style.display = 'none';
                 });
@@ -54,7 +54,7 @@ function makeSkillListElement({ skills, categoryName }) {
     });
 
     return `
-    <div class="skills-table__content__list fade-in ${categoryName}">
+    <div class="skills__list fade-in ${categoryName}">
         ${skillElements}
     </div>
     `;

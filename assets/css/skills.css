@@ -48,7 +48,7 @@
     overflow: hidden;
 }
 
-.skills-table__content__list {
+.skills__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 80px);
     justify-content: space-around;
@@ -113,7 +113,7 @@
         padding: 30px;
     }
 
-    .skills-table__content__list {
+    .skills__list {
         gap: 10px;
     }
 
