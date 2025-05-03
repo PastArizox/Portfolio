@@ -8,11 +8,11 @@
     padding: 25px 0px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .skills__category {
-    padding: 25px 100px;
+    padding: 25px 80px;
     margin-right: -40px;
     text-wrap: nowrap;
     font: var(--p);
@@ -40,6 +40,7 @@
 
 .skills-table__content {
     padding: 50px 80px 50px calc(40px + 25px + 80px);
+    margin: 50px 0px;
     width: 100%;
     border-radius: 25px;
     box-shadow: var(--shadow);

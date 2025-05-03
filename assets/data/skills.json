@@ -1,65 +1,9 @@
 {
-    "software": [
-        {
-            "name": "Java",
-            "icon": "assets/logo/langages/java.svg",
-            "url": "https://www.java.com/"
-        },
-        {
-            "name": "JavaFx",
-            "icon": "assets/logo/frameworks/javafx.svg",
-            "url": "https://openjfx.io/"
-        },
+    "languages": [
         {
             "name": "C#",
             "icon": "assets/logo/langages/csharp.svg",
             "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
-        },
-        {
-            "name": "Dotnet",
-            "icon": "assets/logo/frameworks/dotnet.svg",
-            "url": "https://dotnet.microsoft.com/"
-        }
-    ],
-
-    "back-end": [
-        {
-            "name": "C#",
-            "icon": "assets/logo/langages/csharp.svg",
-            "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
-        },
-        {
-            "name": "Dotnet",
-            "icon": "assets/logo/frameworks/dotnet.svg",
-            "url": "https://dotnet.microsoft.com/"
-        },
-        {
-            "name": "Java",
-            "icon": "assets/logo/langages/java.svg",
-            "url": "https://www.java.com/"
-        },
-        {
-            "name": "PostgreSQL",
-            "icon": "assets/logo/database/postgresql.svg",
-            "url": "https://www.postgresql.org/"
-        },
-        {
-            "name": "MySQL",
-            "icon": "assets/logo/database/mysql.svg",
-            "url": "https://www.mysql.com/"
-        },
-        {
-            "name": "Spring",
-            "icon": "assets/logo/frameworks/spring.svg",
-            "url": "https://spring.io/"
-        }
-    ],
-
-    "front-end": [
-        {
-            "name": "HTML",
-            "icon": "assets/logo/langages/html.svg",
-            "url": "https://wikipedia.org/wiki/HTML"
         },
         {
             "name": "CSS",
@@ -67,7 +11,17 @@
             "url": "https://wikipedia.org/wiki/CSS"
         },
         {
-            "name": "Javascript",
+            "name": "HTML",
+            "icon": "assets/logo/langages/html.svg",
+            "url": "https://wikipedia.org/wiki/HTML"
+        },
+        {
+            "name": "Java",
+            "icon": "assets/logo/langages/java.svg",
+            "url": "https://www.java.com/"
+        },
+        {
+            "name": "JavaScript",
             "icon": "assets/logo/langages/javascript.svg",
             "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
         },
@@ -75,6 +29,18 @@
             "name": "TypeScript",
             "icon": "assets/logo/langages/typescript.svg",
             "url": "https://www.typescriptlang.org/"
+        }
+    ],
+    "frameworks": [
+        {
+            "name": "Dotnet",
+            "icon": "assets/logo/frameworks/dotnet.svg",
+            "url": "https://dotnet.microsoft.com/"
+        },
+        {
+            "name": "JavaFx",
+            "icon": "assets/logo/frameworks/javafx.svg",
+            "url": "https://openjfx.io/"
         },
         {
             "name": "React",
@@ -82,27 +48,33 @@
             "url": "https://reactjs.org/"
         },
         {
+            "name": "Spring",
+            "icon": "assets/logo/frameworks/spring.svg",
+            "url": "https://spring.io/"
+        },
+        {
             "name": "Vue.js",
             "icon": "assets/logo/frameworks/vuejs.svg",
             "url": "https://vuejs.org/"
         }
     ],
-
-    "tools": [
+    "databases": [
         {
-            "name": "Visual Studio",
-            "icon": "assets/logo/softwares/vs.svg",
-            "url": "https://visualstudio.microsoft.com/"
+            "name": "MySQL",
+            "icon": "assets/logo/database/mysql.svg",
+            "url": "https://www.mysql.com/"
         },
         {
-            "name": "Visual Studio Code",
-            "icon": "assets/logo/softwares/vscode.svg",
-            "url": "https://code.visualstudio.com/"
-        },
+            "name": "PostgreSQL",
+            "icon": "assets/logo/database/postgresql.svg",
+            "url": "https://www.postgresql.org/"
+        }
+    ],
+    "devops": [
         {
-            "name": "IntelliJ IDEA",
-            "icon": "assets/logo/softwares/intellij-idea.svg",
-            "url": "https://www.jetbrains.com/idea/"
+            "name": "Git",
+            "icon": "assets/logo/tools/git.svg",
+            "url": "https://git-scm.com/"
         },
         {
             "name": "GitHub Actions",
@@ -115,24 +87,38 @@
             "url": "https://jenkins.io/"
         },
         {
-            "name": "Windows Server",
-            "icon": "assets/logo/tools/windows-server.svg",
-            "url": "https://www.microsoft.com/en-us/cloud-platform/windows-server"
-        },
-        {
-            "name": "Git",
-            "icon": "assets/logo/tools/git.svg",
-            "url": "https://git-scm.com/"
-        },
-        {
             "name": "Node",
             "icon": "assets/logo/tools/node.svg",
             "url": "https://nodejs.org/"
-        },
+        }
+    ],
+    "environments": [
         {
             "name": "Linux",
             "icon": "assets/logo/tools/linux.svg",
             "url": "https://www.linux.org/"
+        },
+        {
+            "name": "Windows Server",
+            "icon": "assets/logo/tools/windows-server.svg",
+            "url": "https://www.microsoft.com/en-us/cloud-platform/windows-server"
+        }
+    ],
+    "ides": [
+        {
+            "name": "IntelliJ IDEA",
+            "icon": "assets/logo/softwares/intellij-idea.svg",
+            "url": "https://www.jetbrains.com/idea/"
+        },
+        {
+            "name": "Visual Studio",
+            "icon": "assets/logo/softwares/vs.svg",
+            "url": "https://visualstudio.microsoft.com/"
+        },
+        {
+            "name": "Visual Studio Code",
+            "icon": "assets/logo/softwares/vscode.svg",
+            "url": "https://code.visualstudio.com/"
         }
     ]
 }
