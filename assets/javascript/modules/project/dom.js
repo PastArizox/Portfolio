@@ -52,7 +52,6 @@ export function makeProjectElement(project) {
     githubLogo.src = 'assets/logo/socials/github.svg';
     githubLogo.alt = 'Github logo';
 
-    // footer.append(date, languages, githubLogo);
     footer.append(date, languages, githubLogo);
     content.append(title, description, footer);
     projectElement.append(picture, content);
