@@ -1,22 +1,26 @@
 function makeContactElement(contact) {
-    const contactElement = `
-    <div class="contact">
-        <a
-            class="contact__link"
-            href="${contact.url}"
-            target="_blank"
-        >
-            <img
-                class="contact__logo"
-                src="${contact.image}"
-                alt="${contact.name} image"
-            />
-        </a>
-        <span>${contact.name}</span>
-    </div>
-    `;
+    const container = document.createElement('div');
+    container.className = 'contact';
 
-    return contactElement;
+    const link = document.createElement('a');
+    link.className = 'contact__link';
+    link.href = contact.url;
+    link.target = '_blank';
+
+    const img = document.createElement('img');
+    img.className = 'contact__logo';
+    img.src = contact.image;
+    img.alt = `${contact.name} image`;
+
+    link.appendChild(img);
+    container.appendChild(link);
+
+    const span = document.createElement('span');
+    span.textContent = contact.name;
+
+    container.appendChild(span);
+
+    return container;
 }
 
 export function loadContacts() {
@@ -26,10 +30,14 @@ export function loadContacts() {
             const contactListElement =
                 document.querySelector('.contacts__list');
 
-            const contactElements = contacts.map((contact) =>
-                makeContactElement(contact)
-            );
+            // Vider l'ancien contenu (plus sûr que innerHTML = '')
+            while (contactListElement.firstChild) {
+                contactListElement.removeChild(contactListElement.firstChild);
+            }
 
-            contactListElement.innerHTML = contactElements.join('');
+            contacts.forEach((contact) => {
+                const contactElement = makeContactElement(contact);
+                contactListElement.appendChild(contactElement);
+            });
         });
 }
