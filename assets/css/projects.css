@@ -51,6 +51,7 @@
 
 .project__title {
     transition: var(--transition);
+    text-align: center;
 }
 
 .project:hover .project__title {
@@ -58,7 +59,7 @@
 }
 
 .project__description {
-    text-align: left;
+    text-align: center;
 }
 
 .project__date {
